@@ -428,9 +428,37 @@ dd {
   font-size: 40px;
 }
 
-@media(min-width:767px) {
+@media(min-width:400px) {
+  .billboard {
+    height: 200px;
+  }
+}
+
+@media(min-width:412px) {
   .billboard {
     height: 400px;
+  }
+}
+
+@media(min-width:540px) {
+  .billboard {
+    height: 500px;
+  }
+}
+
+@media(min-width:767px) {
+  .billboard {
+    height: 700px;
+  }
+}
+
+@media(min-width:1280px) {
+    .billboard {
+      height: 1000px;
+    }
+    .billboard-three {
+      background-position: center -90%;
+    }
   }
 
   .billboard-header {
@@ -440,7 +468,6 @@ dd {
   .billboard-text {
     font-size: 80px;
   }
-}
 
 @media(min-width:992px) {
   /*
@@ -449,6 +476,9 @@ dd {
   */
   .billboard {
     background-attachment: fixed;
+  }
+  .billboard-three {
+    background-position: center -0% !important;
   }
 }
 
@@ -459,7 +489,7 @@ dd {
 
 .billboard-three {
   background-image: url(../img/story-three.jpg);
-  background-position: center -180%;
+  background-position: center -160%;
 }
 
 .billboard-four {
